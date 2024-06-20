@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 120px;
+            background-color: #333;
+            position: relative;
+        }
+        .box-child {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 5px;
+        }
+        /* .box-child {
+            background-color: rgb(255, 255, 255, 0.5);
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            right: 10px;
+            left: 10px;
+        } */
+        .box2 {
+            width: 300px;
+            height: 100px;
+            background-color: violet;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!--Position:
+
+        absolute: lấy thẻ cha gần nhất có position, và lấy thẻ đó để làm gốc toạ độ
+    -->
+    
+    <div class="box">
+        <!-- Hello -->
+        <div>
+            <div class="box2">
+                <div class="box-child"></div>
+                <!-- ban đầu khi box 2 chưa có position, box-child sẽ
+                 phụ thuộc vào box. nhưng khi box2 có position, nó liền chuyển
+                 qua box2 làm gốc toạ độ. vì box2 gần box-child hơn so với box -->
+            </div>
+        </div>
+    </div>
+
+    <h1>Position</h1>
+    <ul>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+    </ul>
+</body>
+</html>
