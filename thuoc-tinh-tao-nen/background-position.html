@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://cdn.myanimelist.net/images/characters/7/265243.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px;
+
+            /*có các góc khác, center, có thể điền giá trị tương đối là %
+            và tuyệt đối là 20px*/
+            /* background-position: bottom right; */
+            /* background-position: top 20% right 10%; */
+
+            /*đối với giá trị tuyệt đối, tương đối thì tính theo trục toạ độ
+            cách bên trái (trục y)
+            cách bên trên (trục x)
+            có thể dùng giá trị âm
+            */
+            background-position: 30px 50px;
+
+            /*nếu viết 1 giá trị, thì giá trị thứ 2 mặc định là center*/
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+</body>
+</html>

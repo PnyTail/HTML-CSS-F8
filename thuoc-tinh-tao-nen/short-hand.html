@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .header {
+            width: 100%;
+            height: 100vh;
+            /* background-image: url(https://cdn.myanimelist.net/images/characters/7/265243.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain; */
+            /*cú pháp shorthand để viết ngắn gọn lại so với việc phải viết hết các thuộc tính cho bg*/
+
+            background: url(https://cdn.myanimelist.net/images/characters/7/265243.jpg) no-repeat center / contain;
+            /*thuộc tính background-size thêm dấu gạch chéo ở trước*/
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://cdn.myanimelist.net/images/characters/7/265243.jpg);
+            background-repeat: no-repeat;
+            /*contain nó sẽ không làm ảnh bị che khuất,
+            contain thì có hở ra khoảng trắng,*/
+            /* background-size: contain; */
+
+            /*cover thì chấp nhận làm ảnh bị khuất, nó lấy chiều nào dài hơn để làm 100% khung nhìn
+            cover không chấp nhận hở ra khoảng trắng*/
+            background-size: contain;
+
+            /*
+                contain: lấy kích thước ảnh chiều ngang hoặc dọc sao cho không bị cắt ảnh trọn vẹn, chấp nhận khoảng trắng
+                ảnh không bị che khuất nhưng có khoảng trắng vì ảnh nhỏ nhưng nền to
+                -Tự động kéo ảnh cho đến khi chiều rộng hoặc cao của khối cần tô màu được lấp đầy (chỉ cần 1 trong 2 là được),
+                    dù khối mà mình cần tô màu có bị trống cũng không sao
+                -Giữ hết khung ảnh, không bị cắt
+                - hiển thị ảnh đầy đủ
+
+                cover: lấy kích thước ảnh chiều ngang hoặc dọc sao cho lấp hết browser, chấp nhận cắt ảnh để bỏ khoảng trắng
+                mất ảnh vì to ra để lấp đầy nền, lấy chiều dài để lấp nền
+                -Tự động kéo ảnh cho đến khi cả chiều rộng và chiều cao được lấp đầy, cho dù ảnh có bị cắt cũng không sao, cũng
+                    tức là lúc này khối mà mình cần tô đã được bao phủ hoàn toàn rồi.
+                Chú ý kéo ảnh ở đây là kéo theo đúng tỷ lệ của ảnh, ví dụ ảnh 3:4 thì kéo to lên thành 6:8 hoặc 9:12 ...v.v...
+                -cover ảnh hết vừa với browser, có cắt ảnh để vừa trình duyệt
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+</body>
+</html>
