@@ -18,6 +18,10 @@ html {
     background-color: #000;
 }
 
+#nav {
+    display: inline-block;
+}
+
 /*css cho ul hay li đều được*/
 #nav, .subnav {
     list-style: none;
@@ -76,6 +80,26 @@ html {
     padding: 0 12px;
     line-height: 38px;
 }
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+} 
 
 #slider {
 }
