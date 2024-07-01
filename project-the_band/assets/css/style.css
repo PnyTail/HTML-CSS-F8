@@ -10,12 +10,18 @@ html {
 }
 
 #main {
-
+    
 }
 
 #header {
     height: 46px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* có thể cho width 100% thay cho right left
+    hoặc dùng sticky */
 }
 
 #nav {
@@ -102,10 +108,14 @@ html {
 } 
 
 #slider {
+    height: 400px;
+    background-color: green;
+    margin-top: 46px;
 }
 
 #content {
-
+    /* cho dài để có thể lăn chuột */
+    height: 2000px;
 }
 
 #footer {
