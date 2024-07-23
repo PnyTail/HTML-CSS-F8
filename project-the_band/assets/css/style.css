@@ -22,6 +22,9 @@ html {
     left: 0;
     /* có thể cho width 100% thay cho right left
     hoặc dùng sticky */
+
+    /* xử lý việc ảnh nổi đè lên thanh header, có thể tăng giá trị lên */
+    z-index: 1;
 }
 
 #nav {
@@ -108,9 +111,38 @@ html {
 } 
 
 #slider {
-    height: 400px;
-    background-color: green;
+    /* height: 400px;
+    background-color: green; */
     margin-top: 46px;
+
+    /* 50% chiều ngang của chính nó, kế thừa width */
+    padding-top: 50%;
+
+    /* background img, bg position / bg size, bg repeat */
+    background: url('/project-the_band/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+
+    /* cách 1 */
+    /* left: 50%;
+    transform: translateX(-50%); */
+
+    /* cách 2, cũng có thể dùng left 0, right 0 */
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading {
+    font-weight: 100;
+    font-size: 24px;
+}
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content {
