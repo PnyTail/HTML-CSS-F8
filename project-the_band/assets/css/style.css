@@ -9,6 +9,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 #main {
     
 }
@@ -180,6 +184,27 @@ html {
     /* chữ 2 đầu đều nhau */
     text-align: justify;
     line-height: 1.4;
+}
+
+#content .members-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    /* width: calc(100% / 3); */
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
 }
 
 /* #content .section-heading,
