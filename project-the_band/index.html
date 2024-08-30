@@ -138,7 +138,7 @@
     </div>
 
     <div class="modal js-modal">
-        <div class="modal-container">
+        <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
@@ -177,23 +177,37 @@
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket');
         const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container');
         const modalClose = document.querySelector('.js-modal-close');
         const modalFooterClose = document.querySelector('.js-modal-footer-close');
 
+        // Hàm thêm class 'open' vào modal
         function showBuyTickets() {
             modal.classList.add('open');
         }
 
+        // function remove class 'open' from modal
         function hideBuyTickets() {
             modal.classList.remove('open');
         }
         
+        // Lặp qua từng thẻ button và nghe hành vi 'click', vì có nhiều buyBtns
         for (const buyBtn of buyBtns) {
             buyBtn.addEventListener('click', showBuyTickets);
         }
 
+        // Nghe sự kiện 'click' và đóng modal khi click vào nút đóng
         modalClose.addEventListener('click', hideBuyTickets);
         modalFooterClose.addEventListener('click', hideBuyTickets);
+
+        // người cha
+        modal.addEventListener('click', hideBuyTickets);
+
+        /* khi nhấn vào cha, thì sẽ có sự kiện. nhưng đứa con này sẽ chặn sự kiện đó */ 
+        modalContainer.addEventListener('click',function(event) {
+            event.stopPropagation();
+            // console.log("test");
+        })
     </script>
 </body>
 </html>
