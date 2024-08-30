@@ -326,10 +326,10 @@ html {
     left: 0;
     z-index: 1;
     background: rgba(0, 0, 0, 0.4);
-    display: flex;
+    /* display: flex; */
     align-items: center; /* nằm giữa của chiều cao */
     justify-content: center; /* nằm giữa chiều ngang */
-    /* display: none; */
+    display: none;
 }
 
 .modal.open {
