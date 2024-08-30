@@ -405,9 +405,33 @@ html {
 }
 
 .modal-footer {
-    padding: 16px;
-    text-align: right;
+    padding: 0 16px;
+}
+
+.modal-footer-close {
+    /* margin: 16px; */
+    height: 38px;
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+}
+
+.modal-footer-close:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-help {
+    /* padding: 16px; */
     font-size: 15px;
+    /* display: inline-block; */
+    width: 90px;
+    /* text-align: right; */
+    float: right;
+    margin: 15px 0;
 }
 
 .modal-footer a {
