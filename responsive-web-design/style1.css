@@ -1,0 +1,20 @@
+/* devices smaller than 740px */
+@media only screen and (max-width: 740px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* devices larger than 741px */
+@media only screen and (min-width: 741px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+/* devices larger than 1024px */
+@media only screen and (min-width: 1024px) {
+    h1 {
+        color: red;
+    }
+}
