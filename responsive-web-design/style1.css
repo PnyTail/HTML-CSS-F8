@@ -1,20 +1,38 @@
-/* devices smaller than 740px */
-@media only screen and (max-width: 740px) {
-    h1 {
-        color: blue;
+body {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+
+.mobile,
+.tablet,
+.pc {
+    margin: auto;
+    font-size: 100px;
+    color: #fff;
+    display: none;
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+    .mobile {
+        display: block;
     }
 }
 
-/* devices larger than 741px */
-@media only screen and (min-width: 741px) {
-    h1 {
-        color: yellow;
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .tablet {
+        display: block;
     }
 }
 
-/* devices larger than 1024px */
+/* PC: width >= 1024px */
 @media only screen and (min-width: 1024px) {
-    h1 {
-        color: red;
+    .pc {
+        display: block;
     }
 }
