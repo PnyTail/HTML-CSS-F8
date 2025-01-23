@@ -272,9 +272,15 @@
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for (var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
-
+            
             menuItem.onclick = function() {
-                header.style.height = null;
+                //nếu có ace liền kề và class ace liền kề đó là subnav thì đó là menu cha
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
             }
         }
 

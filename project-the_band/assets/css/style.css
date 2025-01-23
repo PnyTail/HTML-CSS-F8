@@ -95,7 +95,6 @@ html {
 
     /* xử lý việc ảnh nổi đè lên thanh header, có thể tăng giá trị lên */
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
